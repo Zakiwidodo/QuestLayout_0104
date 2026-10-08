@@ -1,7 +1,23 @@
 package com.example.activity3
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.R
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+
+fun Column(
+    modifier: Modifier,
+    horizontalAlignment: Alignment.Horizontal,
+    content: Any
+) {
+}
 
 @Composable
 fun ActifitasPertama(modifier: Modifier) {
@@ -29,6 +45,20 @@ fun ActifitasPertama(modifier: Modifier) {
             )
         ) {
             Row() {
+                val gambar = painterResource(id = R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource("Bambang Sumantri"),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+            }
+            }
                 ```[cite: 4]
     }
 }
