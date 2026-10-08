@@ -57,6 +57,17 @@ fun ActifitasPertama(modifier: Modifier) {
                         stringResource("Bambang Sumantri"),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(id = R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
             }
             }
                 ```[cite: 4]
